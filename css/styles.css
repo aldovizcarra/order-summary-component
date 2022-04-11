@@ -18,39 +18,37 @@
 }
 
 body {
+  min-height: 100vh;
   background-image: url("../images/pattern-background-desktop.svg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-color: var(--primary-clr--pale-blue);
-  font-size: 1rem;
   font-family: var(--ff--);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
 h1 {
   font-weight: 900;
   font-size: 1.5rem;
-  margin-top: 1.5em;
 }
 
 img {
   width: 100%;
 }
 
-.container {
-  width: 95%;
-  margin: auto;
-}
-
 .card {
-  width: 100%;
   max-width: 375px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 5em auto 1em;
+  /* margin: 5em auto 1em; */
   background-color: #fff;
-  padding-bottom: 2em;
+  /* padding-bottom: 2em; */
   border-radius: 15px;
 }
 
@@ -58,15 +56,31 @@ img {
   border-radius: 15px 15px 0 0;
 }
 
-.card__text--summary {
-  width: 70%;
+.content__text--summary {
+  /* width: 70%; */
   color: var(--neutral-clr--desaturated-blue);
   font-weight: 500;
   line-height: 1.5;
-  margin-top: 1.2em;
+  /* margin-top: 1.2em; */
 }
 
 .annual-plan {
+  background-color: var(--neutral-clr--very-pale-blue);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.1rem 1rem;
+}
+
+.left-content {
+  display: flex;
+}
+
+.content {
+  padding: 2rem 1.5rem;
+}
+
+/* .annual-plan {
   display: flex;
   background-color: var(--neutral-clr--very-pale-blue);
   border-radius: 0.6em;
@@ -76,7 +90,6 @@ img {
 }
 
 .music-img {
-  /* min-width: 50px; */
   margin: 0.7em 1.6em 0 0.5em;
 }
 
@@ -151,4 +164,4 @@ img {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
-}
+} */
