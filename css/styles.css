@@ -1,0 +1,154 @@
+:root {
+  --primary-clr--pale-blue: hsl(225, 100%, 94%);
+  --primary-clr--bright-blue: hsl(245, 75%, 52%);
+
+  --neutral-clr--very-pale-blue: hsl(225, 100%, 98%);
+  --neutral-clr--desaturated-blue: hsl(224, 23%, 55%);
+  --neutral-clr--dark-blue: hsl(223, 47%, 23%);
+
+  --ff--: "Red Hat Display", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: var(--primary-clr--pale-blue);
+  font-size: 1rem;
+  font-family: var(--ff--);
+  text-align: center;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 1.5rem;
+  margin-top: 1.5em;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  width: 95%;
+  margin: auto;
+}
+
+.card {
+  width: 100%;
+  max-width: 375px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5em auto 1em;
+  background-color: #fff;
+  padding-bottom: 2em;
+  border-radius: 15px;
+}
+
+.header-img {
+  border-radius: 15px 15px 0 0;
+}
+
+.card__text--summary {
+  width: 70%;
+  color: var(--neutral-clr--desaturated-blue);
+  font-weight: 500;
+  line-height: 1.5;
+  margin-top: 1.2em;
+}
+
+.annual-plan {
+  display: flex;
+  background-color: var(--neutral-clr--very-pale-blue);
+  border-radius: 0.6em;
+  width: 90%;
+  padding: 0.5em 0.5em;
+  margin-top: 1.5em;
+}
+
+.music-img {
+  /* min-width: 50px; */
+  margin: 0.7em 1.6em 0 0.5em;
+}
+
+.annual-plan__flex {
+  display: flex;
+}
+
+.annual-plan__text {
+  margin-top: 1em;
+}
+
+.annual-plan__text p {
+  font-weight: 700;
+}
+
+.annual-plan__link {
+  margin: 1.5em 0 0 3.8em;
+  font-weight: 700;
+}
+
+.annual-plan__link a {
+  color: var(--primary-clr--bright-blue);
+  transition: ease 0.3s;
+}
+
+.annual-plan__text--price {
+  color: var(--neutral-clr--desaturated-blue);
+}
+
+.card__text--cancel-order {
+  color: var(--neutral-clr--desaturated-blue);
+  font-weight: 700;
+  text-decoration: none;
+  display: block;
+  margin-top: 2em;
+  transition: ease 0.3s;
+}
+
+.btn {
+  width: 90%;
+  padding: 1em 0;
+  font-weight: 700;
+  border-radius: 0.6em;
+  background-color: var(--primary-clr--bright-blue);
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 1.6em;
+  box-shadow: 0 20px 40px -15px var(--primary-clr--bright-blue);
+  transition: ease 0.3s;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: rgba(86, 73, 202, 0.849);
+}
+
+.annual-plan__link a:hover,
+.annual-plan__link a:focus {
+  text-decoration: none;
+  color: rgba(86, 73, 202, 0.849);
+}
+
+.card__text--cancel-order:hover,
+.card__text--cancel-order:focus {
+  color: black;
+}
+
+.attribution {
+  font-size: 0.6875rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
